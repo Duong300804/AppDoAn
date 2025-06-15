@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.user.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- TextView Danh mục -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Danh mục"
+            android:textColor="#E9B86E"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="start" />
+
+        <!-- RecyclerView chứa danh mục -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerDanhMuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvsanpham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Sản phẩm"
+                android:textColor="#E9B86E"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvxemtatcasp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xem tất cả"
+                android:drawableRight="@drawable/baseline_arrow_right_24"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#6D6D6D"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <!-- Thêm GridView vào LinearLayout -->
+        <GridView
+            android:id="@+id/grSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:horizontalSpacing="8dp"
+            android:numColumns="2"
+            android:padding="16dp"
+            android:verticalSpacing="8dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

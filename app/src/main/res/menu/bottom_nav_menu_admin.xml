@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Sản Phẩm"
+        android:icon="@drawable/food"
+        android:id="@+id/QuanLySanPham"/>
+    <item android:title="Danh Mục"
+        android:icon="@drawable/baseline_category_24"
+        android:id="@+id/QuanLyDanhMuc"/>
+    <item android:title="Tài Khoản"
+        android:id="@+id/QuanLyTaiKhoan"
+        android:icon="@drawable/taikhoan"/>
+    <item android:title="Đơn Hàng"
+        android:id="@+id/QuanLyDonHang"
+        android:icon="@drawable/donhang"/>
+    <item android:title="Đánh Giá"
+        android:id="@+id/QuanLyDanhGia"
+        android:icon="@drawable/baseline_message_24"/>
+</menu>

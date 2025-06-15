@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.admin.QLDHFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/tvQLDH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý đơn hàng "
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <EditText
+            android:id="@+id/edtTimkiemDH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvQLDH"
+            android:hint="Tìm kiếm tài khoản..."
+            android:padding="8dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="16dp"/>
+
+
+        <ListView
+            android:id="@+id/lvDonHang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/edtTimkiemDH"/>
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.user.ThanhToanFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanh toán"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ListView
+            android:id="@+id/lvThanhToan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:background="#F5F5F5"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintTop_toBottomOf="@id/titleText"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtHoTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Họ và tên người nhận"
+            app:layout_constraintTop_toBottomOf="@id/lvThanhToan">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtHoTenInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtSoDienThoai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Số điện thoại người nhận"
+            app:layout_constraintTop_toBottomOf="@id/edtHoTen">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtSoDienThoaiInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtDiaChi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Địa chỉ người nhận"
+            app:layout_constraintTop_toBottomOf="@id/edtSoDienThoai">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtDiaChiInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:lines="3" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/totalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Tổng tiền:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtDiaChi" />
+
+        <TextView
+            android:id="@+id/tongtien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="0đ"
+            android:textColor="#E91E63"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/totalLabel"
+            app:layout_constraintStart_toEndOf="@id/totalLabel"
+            app:layout_constraintTop_toTopOf="@id/totalLabel" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnXacNhanThanhToan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="16dp"
+            android:text="Xác nhận thanh toán"
+            android:textSize="16sp"
+            android:backgroundTint="#EBA134"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/totalLabel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

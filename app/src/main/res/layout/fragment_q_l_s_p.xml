@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".fragment.admin.QLSPFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý sản phẩm"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Nút thêm sản phẩm mới -->
+        <Button
+            android:id="@+id/btnThemSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTextView"
+            android:text="Thêm sản phẩm mới"
+            android:backgroundTint="#FD5C29"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Khung tìm kiếm -->
+        <EditText
+            android:id="@+id/edtTimKiem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnThemSanPham"
+            android:hint="Tìm kiếm sản phẩm..."
+            android:padding="8dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Danh sách sản phẩm -->
+        <ListView
+            android:id="@+id/lvSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/edtTimKiem"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Ảnh sản phẩm -->
+
+        <!-- Thông tin sản phẩm -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+
+
+
+            <TextView
+                android:id="@+id/tvMaTaiKhoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TK01"/>
+            <TextView
+                android:id="@+id/tvTenTaiKhoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thùy Tiên"/>
+
+            <TextView
+                android:id="@+id/tvMatKhauTK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1234"/>
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textStyle="bold"
+                android:text="tien@gmail.com"/>
+            <TextView
+                android:id="@+id/tvLoaiTaiKhoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="admin"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

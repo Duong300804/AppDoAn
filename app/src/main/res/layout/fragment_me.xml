@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.user.MeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Tiêu đề chính -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật thông tin"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp" />
+
+        <!-- Họ và Tên -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ và Tên"
+            android:textSize="16sp"
+            android:paddingTop="8dp" />
+        <EditText
+            android:id="@+id/edtHoVaTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:hint="hovaten"
+            android:padding="10dp" />
+
+        <!-- Ngày sinh -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày sinh"
+            android:textSize="16sp"
+            android:paddingTop="8dp" />
+        <EditText
+            android:id="@+id/edtNgaySinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:hint="ngaysinh"
+            android:inputType="date"
+            android:focusable="true"
+            android:padding="10dp" />
+
+
+        <!-- Số điện thoại -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại"
+            android:textSize="16sp"
+            android:paddingTop="8dp" />
+        <EditText
+            android:id="@+id/edtSoDienThoai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:hint="sdt"
+            android:inputType="phone"
+            android:padding="10dp" />
+
+        <!-- Căn cước công dân -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Căn cước công dân"
+            android:textSize="16sp"
+            android:paddingTop="8dp" />
+        <EditText
+            android:id="@+id/edtCCCD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:hint="cccd"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <!-- Địa chỉ -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ"
+            android:textSize="16sp"
+            android:paddingTop="8dp" />
+        <EditText
+            android:id="@+id/edtDiaChi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:hint="diachi"
+            android:padding="10dp" />
+
+        <!-- Nút Cập nhật thông tin -->
+        <Button
+            android:id="@+id/btnCapNhat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật thông tin"
+            android:textSize="18sp"
+            android:backgroundTint="@color/orange"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

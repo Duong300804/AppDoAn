@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.admin.QLTKFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/tvQLTK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý tài khoản "
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Nút thêm tài khoản mới -->
+        <Button
+            android:id="@+id/btnthemTK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvQLTK"
+            android:text="Thêm Tài Khoản"
+            android:backgroundTint="#FD5C29"
+            android:layout_marginBottom="16dp"/>
+
+
+        <EditText
+            android:id="@+id/edtTimkiemTK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnthemTK"
+            android:hint="Tìm kiếm tài khoản..."
+            android:padding="8dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="16dp"/>
+
+        <ListView
+            android:id="@+id/lvTaiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/edtTimkiemTK"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

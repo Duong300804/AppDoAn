@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.admin.ThongKeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TextView Tổng Doanh Thu -->
+        <TextView
+            android:id="@+id/tvTongDoanhThu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Tổng Doanh Thu: 0"
+            android:textColor="#3167EF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- TextView Tổng Đơn Hàng -->
+        <TextView
+            android:id="@+id/tvTongDonHang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Tổng Đơn Hàng: 0"
+            android:textColor="#FF5722"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- ListView Sản Phẩm Hết Hàng -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sản Phẩm Hết Hàng"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <ListView
+            android:id="@+id/lvSanPhamOut"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="#BDBDBD"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+
+</FrameLayout>
